@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会議室予約 一覧</title>
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 24px;
+    background: #f7f7f5;
+    color: #222;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .date { color: #666; font-size: 14px; margin-bottom: 20px; }
+  table {
+    width: 100%;
+    max-width: 760px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+  th { background: #efefec; font-weight: 600; }
+  .status { font-size: 12px; padding: 2px 8px; border-radius: 10px; }
+  .booked   { background: #e6efe9; color: #2f6b45; }
+  .using    { background: #e9eef5; color: #2f4f6b; }
+  .canceled { background: #f0eaea; color: #7a5252; }
+  .empty { color: #777; font-size: 14px; margin-top: 16px; }
+</style>
+</head>
+<body>
 
+  <h1>会議室 予約一覧</h1>
+  <p class="date">2026年10月1日（木）</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>会議室</th>
+        <th>時間</th>
+        <th>予約者</th>
+        <th>状態</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>第1会議室</td>
+        <td>10:00 - 11:00</td>
+        <td>佐野</td>
+        <td><span class="status using">利用中</span></td>
+      </tr>
+      <tr>
+        <td>第1会議室</td>
+        <td>13:00 - 14:30</td>
+        <td>三宅</td>
+        <td><span class="status booked">予約済</span></td>
+      </tr>
+      <tr>
+        <td>第2会議室</td>
+        <td>09:30 - 10:30</td>
+        <td>大野</td>
+        <td><span class="status canceled">キャンセル済</span></td>
+      </tr>
+      <tr>
+        <td>役員会議室</td>
+        <td>15:00 - 17:00</td>
+        <td>久保田</td>
+        <td><span class="status booked">予約済</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ここに0件メッセージを追加 -->
+
+</body>
+</html>
